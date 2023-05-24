@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- specifies document to the browser-->
+<html lang="en"> 
+    <!--Element - building block of HTML document-->
+    <!-- lang is an attribute meaning lang is saying that this page is in english-->
+<head>
+    <!-- Contains METADATA-->
+    <meta charset="UTF-8">
+    <!-- Character encoding (for different alphabets)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- permits the use of the HTTP method-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Specifies the default sizing of the page for mobile first design-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tag that connects files together and specifies relationship-->
+    <title>HTML & Basics</title>
+</head>
+<body>
+    <!-- contains everything displayed to the viewport -->
+    <header id="header"> HTML & CSS Fundamentals</header>
+    <!-- Attribute values should not have spaces because spaces indicates more values -->
+    <nav id="nav-bar">
+        <!-- Anchor tag or link element -->
+        <a href="" class="nav-link">About</a>
+        <a href="" class="nav-link">Content</a>
+        <a href="" class="nav-link">Contact</a>
+        <!-- a.nav-link{contact} (anchor tag with a class attribute with a contact rendered)-->
+    </nav>
+    <!-- section>article.article>h1{Title}+p>strong{bold paragraph}^img -->
+    <section>
+        <article class="article">
+            <h1>Title</h1>
+            <p><strong>bold paragraph don't pay attention to me yet</strong></p>
+            <img src="https://images.unsplash.com/photo-1684710304079-f95bc6af8186?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" 
+            alt="Leeum Museum of Art">
+        </article>
+    </section>
+
+    <div class="order-of-specificity" id="order-of-specificity" style="background-color: green">
+        Order of specificity
+    </div>
+
+    <section class="parent-element">
+        Parent Box
+        <article class="child-box"> child box </article>
+    </section>
+</body>
+</html>
